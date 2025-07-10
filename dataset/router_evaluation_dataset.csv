@@ -1,4 +1,4 @@
-question,true_label
+question,true_label,relevant_doc_ids
 "apa saja syarat wajib zakat?","BAZNAS"
 "bagaimana cara menghitung zakat profesi?","BAZNAS"
 "jelaskan tentang program Z-Mart BAZNAS","BAZNAS"
