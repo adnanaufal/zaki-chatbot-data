@@ -41,12 +41,27 @@ The datasets are embedded using **IndoBERT**.
 ---
 
 ## 📊 Evaluation
-The model is evaluated using **RAGAS** with the following metrics:
-- **Faithfulness** — Answers are consistent with the retrieved sources.
-- **Answer Relevancy** — Answers are relevant to the given question.
-- **Context Recall** — The retrieved context is sufficiently complete.
-- **Context Precision** — The retrieved context is highly relevant.
+The system is evaluated using **information retrieval and performance metrics** to measure the effectiveness of the Hybrid RAG approach.
 
+### 📏 Metrics Used
+1. **System Precision@5**  
+   The proportion of relevant documents in the top 5 retrieved results.
+
+2. **Recall@5**  
+   The proportion of all relevant documents successfully retrieved within the top 5 results.
+
+3. **NDCG@5 (Normalized Discounted Cumulative Gain)**  
+   Measures ranking quality by assigning higher value to relevant documents appearing higher in the result list.
+
+4. **MRR (Mean Reciprocal Rank)**  
+   The average of the reciprocal ranks of the first relevant result across all queries.
+
+5. **Hit Rate@5**  
+   The percentage of queries where at least one relevant document appears in the top 5 results.
+
+6. **Average Response Time**  
+   The mean time taken by the system to process a query and return an answer.
+   
 ---
 
 ## 📊 Detailed Evaluation Method (Upcoming)
