@@ -22,7 +22,7 @@ Powered by **Hybrid Retrieval-Augmented Generation (RAG)** with a **knowledge ba
 
 ## 🏗 Architecture
 - **Retriever:** FAISS + BM25
-- **LLM Reranker:** IndoBERT + Cross-Encoder
+- **LLM Reranker:** [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p2) + Cross-Encoder
 - **Generator:** OpenAI / Local LLM
 - **Knowledge Store:** Supabase PostgreSQL (embeddings + metadata)
 
