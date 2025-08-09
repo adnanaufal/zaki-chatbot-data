@@ -6,7 +6,8 @@
 ![Status](https://img.shields.io/badge/Status-Development-yellow)
 
 **ZAKI** is an intelligent chatbot for **zakat information & consultation Islamic**.  
-Powered by **Hybrid Retrieval-Augmented Generation (RAG)** with a **knowledge base** from the **Qur’an** and official BAZNAS documents, ZAKI can answer questions with **high accuracy, trusted sources, and automated zakat calculations**.
+Powered by **Hybrid Retrieval-Augmented Generation (RAG)** with a **knowledge base** from the **Qur’an** and official BAZNAS documents.
+ZAKI can answer questions with **high accuracy, trusted sources, and automated zakat calculations**.
 
 ---
 
@@ -21,9 +22,10 @@ Powered by **Hybrid Retrieval-Augmented Generation (RAG)** with a **knowledge ba
 ---
 
 ## 🏗 Architecture
-- **Retriever:** FAISS + BM25
-- **LLM Reranker:** [IndoBERT](https://huggingface.co/indobenchmark/indobert-base-p2) + Cross-Encoder
-- **Generator:** OpenAI / Local LLM
+- **Retriever:** FAISS + BM25 + RRF
+- **Reranker:** [Cross-Encoder/ms-marco-MiniLM-L6-v2](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2)
+- **Embedding Model:** [indobenchmark/indobert-base-p2](https://huggingface.co/indobenchmark/indobert-base-p2) 
+- **Generator:** OpenAI
 - **Knowledge Store:** Supabase PostgreSQL (embeddings + metadata)
 
 ---
